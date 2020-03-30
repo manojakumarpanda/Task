@@ -1,0 +1,32 @@
+{% extends 'Accounts/base.html' %}
+
+{% block title %}{{title }}{% endblock %}
+
+{% block container %}
+    <h2 style="color: brown; font-family: sans-serif; font-size: xx-large" ><em>Welcome  Account Log</em></h2>
+<div class="container">
+  <h2 style="color: cornsilk;alignment: center;font-family: sans-serif;font-size: xx-large">Login data of {{ user.username }}</h2>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>UserName</th>
+        <th>Email</th>
+        <th>Loged in at</th>
+        <th>Loged out at</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for deta in data %}
+      <tr>
+        <td>{{deta.id}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>{{deta.start_time}}</td>
+        <td>{{deta.end_time}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}
