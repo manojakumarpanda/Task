@@ -1,0 +1,27 @@
+SuperUser:
+	username=superuser
+	password=superpass
+	email=superuser@gmail.com
+
+user1-:
+	username=username1
+	password=password1
+	email=user1@gmail.com
+	first_name=user1
+	last_name=last1
+
+user1-:
+	username=username2
+	password=password2
+	email=user2@gmail.com
+
+user1-:
+	username=username3
+	password=password3
+	email=user3@gmail.com
+
+so 
+in the home page you can find the Signup and login button when you click the corsponding 
+function will perform and after login you will find a logot button and a update and a user
+i.e logedin user name by clicking that you can see all the login and logout activity of the
+respective user
